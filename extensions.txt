@@ -1,0 +1,15 @@
+aaron-bond.better-comments
+akamud.vscode-theme-onedark
+codelios.dartsass
+dbaeumer.vscode-eslint
+demartini.vscode-idiomatic-css-comments-snippets
+ecmel.vscode-html-css
+esbenp.prettier-vscode
+formulahendry.auto-rename-tag
+mechatroner.rainbow-csv
+ms-ceintl.vscode-language-pack-ja
+oderwat.indent-rainbow
+pkief.material-icon-theme
+pranaygp.vscode-css-peek
+ritwickdey.liveserver
+sidthesloth.html5-boilerplate

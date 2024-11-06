@@ -1,0 +1,20 @@
+{
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "editor.wordWrap": "on",
+  "workbench.colorTheme": "Atom One Dark",
+  "files.associations": {
+      "*.html": "html",
+      "*.css": "css",
+      "*.scss": "scss",
+      "*.js": "javascript"
+  },
+  "files.exclude": {
+      "**/.git": true,
+      "**/.DS_Store": true,
+      "**/node_modules": true
+  },
+  "material-icon-theme.activeIconPack": "react",
+  "prettier.singleQuote": true,
+  "prettier.tabWidth": 2
+}

@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/favicon.ico">
+  <!-- Page Info -->
+  <title>Demo Site 01 | ポートフォリオ用架空サイト</title>
+  <meta name="description" content="ポートフォリオ用の架空サイトです。Saasを活用し、スマホファーストで効率的なスタイル設計しています。">
+  <meta property="og:title" content="Demo Site 01 | ポートフォリオ用架空サイト">
+  <meta property="og:description" content="ポートフォリオ用の架空サイトです。Saasを活用し、スマホファーストで効率的なスタイル設計しています。">
+  <meta property="og:image" content="https://demo-site-01.netlify.app/images/ogp-image.jpeg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Demo Site 01 | ポートフォリオ用架空サイト">
+  <meta name="twitter:description" content="ポートフォリオ用の架空サイトです。Saasを活用し、スマホファーストで効率的なスタイル設計しています。">
+  <meta name="twitter:image" content="https://demo-site-01.netlify.app/images/twitter-image.jpeg">
+  <!-- Reset CSS-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="header">
+    <!-- header -->
+    <div class="header__container">
+      <!-- logo-->
+      <h1 class="header__logo">
+        <a href="/">
+          <img src="images/logo.svg" alt="Logo Image">
+        </a>
+      </h1>
+      <!-- モバイルメニュー（トグルボタン） -->
+      <button class="header__toggle" aria-expanded="false" aria-label="メニュー">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
+
+      <!-- ナビゲーションメニュー（共通） -->
+      <nav class="header__nav">
+        <ul class="header__nav-menu">
+          <li><a href="#service" class="header__menu--list">サービス</a></li>
+          <li><a href="#faq" class="header__menu--list">Q&A</a></li>
+          <li><a href="#contact" class="header__menu--list">お問い合わせ</a></li>
+          <li><a href="#company-overview" class="header__menu--list">会社概要</a></li>
+        </ul>        
+        <ul class="header__nav-btn">
+          <li><a href="#" class="btn__primary trial" target="_blank">無料体験する</a></li>
+          <li><a href="#" class="btn__secondary contact" target="_blank">お問い合わせ</a></li>
+        </ul>        
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <!-- Hero Section -->
+    <section class="hero__section">
+      <div class="hero__section--text">
+        <h2>理想の働き方を選ぼう</h2>
+        <p>私たちの専門チームが、あなたのIT転職の実現するお手伝いをします。</p>
+      <ul class="hero__section--cta">
+        <li><a href="#plan" class="btn__primary plan">料金プラン</a></li>
+        <li><a href="#faq" class="btn__secondary faq">Q & A</a></li>
+      </ul>
+      </div>
+    </section>
+    <!-- service Section -->
+    <section class="section" id="service">
+      <h2>サービス</h2>
+      <p class="section__intro">Web業界で活躍したいあなたをサポートします。キャリアチェンジを考えている方に寄り添った転職支援を提供し、あなたの未来を共に築いていきます。</p>
+      <div class="service__list">
+        <div class="service__card">
+          <h3>キャリア相談</h3>
+          <img class="service__img" src="images/career.jpeg" alt="imge01" loading="lazy">
+          <p class="service__description">
+            キャリアの壁打ち、市場状況に応じたスキルアップなど、
+            多面的に経験豊富なコーディネータがご相談を承ります。
+          </p>
+        </div>
+        <div class="service__card">
+          <h3>転職サポート</h3>
+          <img class="service__img" src="images/support.jpeg" alt="imge02" loading="lazy">
+          <p class="service__description">
+            元人事のベテランがあなたの職務経歴書をレビューし、
+            書類選考の通過率を高めるためのコーチングを行なっています。
+          </p>
+        </div>
+        <div class="service__card">
+          <h3>メンター質問</h3>
+          <img class="service__img" src="images/mentor.jpeg" alt="imge03" loading="lazy">
+          <p class="service__description">
+            教材やポートフォリオ制作の中で発生する技術的な疑問を、
+            現役エンジニアのメンターがお答えします。
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- FAQ Section -->
+    <section class="section" id="faq">
+      <h2>Q & A</h2>
+      <p class="section__intro">よくある質問と回答はこちらです。</p>
+      <div class="faq__container">
+        <div class="faq__item">
+          <div class="faq__item--question" onclick="toggleAnswer(this)">
+            <h3><span class="faq__question--number">Q1.</span> 利用者の条件はありますか？</h3>
+            <i class="fa fa-plus"></i>
+          </div>
+          <div class="faq__item--answer">
+            <p>
+              転職または副業・フリーランスを目指している方なら、
+              どなたでもご利用いただけます。しかし、未成年者様の場合は
+              保護者様のご同意をお願いしています。
+            </p>
+          </div>
+        </div>        
+        <div class="faq__item">
+          <div class="faq__item--question" onclick="toggleAnswer(this)">
+            <h3><span class="faq__question--number">Q2.</span> 転職サポートの内容は？</h3>
+            <i class="fa fa-plus"></i>
+          </div>
+          <div class="faq__item--answer">
+            <p>
+              IT業界の採用経験があるキャリアカウンセラーがあなたの転職活動を
+              総合的にご支援させていただきます。
+            </p>
+            <ul class="item__answer--list">
+              <li><i class="fa-solid fa-check"></i> キャリア面談</li>
+              <li><i class="fa-solid fa-check"></i> 職務経歴書の添削</li>
+              <li><i class="fa-solid fa-check"></i> 模擬面接</li>
+            </ul>
+          </div>
+        </div>
+        <div class="faq__item">
+          <div class="faq__item--question" onclick="toggleAnswer(this)">
+            <h3><span class="faq__question--number">Q3.</span> どんな質問ができますか？</h3>
+            <i class="fa fa-plus"></i>
+          </div>
+          <div class="faq__item--answer">
+            <p>
+              IT業界で5年以上の開発経験がある現役エンジニアが
+              チャットにて技術面のサポートを行います。
+            </p>
+            <ul class="item__answer--list">
+              <li><i class="fa-solid fa-check"></i> 課題の質問</li>
+              <li><i class="fa-solid fa-check"></i> ポートフォリオ制作の支援</li>
+              <li><i class="fa-solid fa-check"></i> ポートフォリオのレビュー</li>
+            </ul>
+          </div>
+        </div>        
+      </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <h2>お問い合わせ</h2>
+      <p class="section__intro">お気軽にお問い合わせください。３営業日までにご返信させていただきます。</p>
+      <form action="#" method="POST" class="contact__form">
+        <input type="text" name="name" placeholder="お名前" required>
+        <input type="email" name="email" placeholder="メールアドレス" required>
+        <textarea name="message" placeholder="お問い合わせ内容" required></textarea>
+        <button type="submit" class="contact__form--btn">送信</button>
+      </form> 
+    </section>
+    <!-- Company Overview -->
+    <section class="section" id="company-overview">
+      <h2>会社概要</h2>
+      <p class="section__intro">私たちの会社は、[設立年]に設立され、[事業内容]を提供しています。私たちのミッションは、[ミッション]であり、私たちのビジョンは、[ビジョン]です。</p>    
+      <div class="office__info">
+        <ul>
+            <li><i class="fa-solid fa-clock"></i> 営業時間: 平日 9:00 〜 18:00</li>
+            <li>
+              <i class="fa-solid fa-phone"></i> 電話番号:
+              <a href="tel:12345678910">123-4567-8910</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope"></i> アドレス:
+              <a href="mailto:contact@xxx.com">contact@xxx.com</a>
+            </li>
+            <li><i class="fa-solid fa-map"></i> 地図: 
+                <div class="oiifce__map">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.34177629136!2d135.51089681171618!3d34.64607057282623!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000ddf023e6dd79%3A0x76f9200a45c2127!2z44GC44G544Gu44OP44Or44Kr44K5!5e0!3m2!1sja!2sjp!4v1730773061830!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </li>
+        </ul>
+    </div>    
+    </section>
+  </main>
+  <!-- Back to top button -->
+  <a href="#" class="top__button"><i class="fa fa-arrow-up"></i></a>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__container">
+      <!-- Link Section -->
+      <div class="footer__item footer__item--links">
+        <h3>Link</h3>
+        <ul>
+          <li><a href="#"><i class="fa fa-square"></i>プライバシーポリシー</a></li>
+          <li><a href="#"><i class="fa fa-square"></i>利用規約</a></li>
+          <li><a href="#contat"><i class="fa fa-square"></i>お問い合わせ</a></li>
+        </ul>
+      </div>
+      <hr class="footer__divider">
+      <!-- SNS Icons -->
+      <div class="footer__item footer__item--social">
+        <h3>SNS</h3>
+        <ul>
+          <li><a href="https://facebook.com" target="_blank"><i class="fa fa-square"></i>facebook</a></li>
+          <li><a href="https://twitter.com" target="_blank"><i class="fa fa-square"></i>X</a></li>
+          <li><a href="https://instagram.com" target="_blank"><i class="fa fa-square"></i>instagram</a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- Copyright -->
+    <hr class="footer__divider--buttom">
+    <div class="footer__item footer__item--copyright">
+      <p>&copy; 2024 Sample株式会社. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS　-->
+  <script src="js/toggle-menu.js"></script>
+  <script src="js/faq-accordion.js"></script>
+  <script src="js/top-button.js"></script>
+</body>
+</html>
