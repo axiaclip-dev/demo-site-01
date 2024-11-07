@@ -19,21 +19,3 @@ navMenu.addEventListener('click', () => {
         toggleButton.innerHTML = '<i class="fa-solid fa-bars fa-2x"></i>';
     }
 });
-
-// アンカーリンク遷移の調整
-navLinks.forEach(link => {
-    link.addEventListener('click', function(e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href');
-        const targetElement = document.querySelector(targetId);
-
-        const headerOffset = document.querySelector('.header').offsetHeight; // ヘッダーの高さ
-        const elementPosition = targetElement.getBoundingClientRect().top; // ターゲット要素の位置
-        const offsetPosition = elementPosition + window.pageYOffset - headerOffset; // スクロール位置の調整
-
-        window.scrollTo({
-            top: offsetPosition,
-            behavior: 'smooth' // スムーズスクロール
-        });
-    });
-});

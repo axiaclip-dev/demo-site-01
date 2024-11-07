@@ -45,6 +45,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-padding-top: 4.5rem;
+}
+
 body {
   font-family: "M PLUS Rounded 1c", serif; /* フォントファミリー */
   font-size: var(--font-size-base);
@@ -242,7 +246,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: var(--spacing-lg);
+  margin-top: 4rem;
   transition: background-size 0.3s ease; /* 背景サイズのトランジション */
 }
 

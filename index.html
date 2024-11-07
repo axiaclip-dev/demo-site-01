@@ -44,13 +44,13 @@
       <nav class="header__nav">
         <ul class="header__nav-menu">
           <li><a href="#service" class="header__menu--list">サービス</a></li>
-          <li><a href="#faq" class="header__menu--list">Q&A</a></li>
+          <li><a href="#faq" class="header__menu--list">よくある質問</a></li>
           <li><a href="#contact" class="header__menu--list">お問い合わせ</a></li>
           <li><a href="#company-overview" class="header__menu--list">会社概要</a></li>
         </ul>        
         <ul class="header__nav-btn">
-          <li><a href="#" class="btn__primary trial" target="_blank">無料体験する</a></li>
-          <li><a href="#" class="btn__secondary contact" target="_blank">お問い合わせ</a></li>
+          <li><a href="#company-overview" class="btn__primary trial">無料体験する</a></li>
+          <li><a href="#contact" class="btn__secondary contact">お問い合わせ</a></li>
         </ul>        
       </nav>
     </div>
@@ -62,8 +62,8 @@
         <h2>理想の働き方を選ぼう</h2>
         <p>私たちの専門チームが、あなたのIT転職の実現するお手伝いをします。</p>
       <ul class="hero__section--cta">
-        <li><a href="#plan" class="btn__primary plan">料金プラン</a></li>
-        <li><a href="#faq" class="btn__secondary faq">Q & A</a></li>
+        <li><a href="#company-overview" class="btn__primary plan">今すぐ始める</a></li>
+        <li><a href="#faq" class="btn__secondary faq">よくある質問</a></li>
       </ul>
       </div>
     </section>
@@ -100,7 +100,7 @@
     </section>
     <!-- FAQ Section -->
     <section class="section" id="faq">
-      <h2>Q & A</h2>
+      <h2>よくある質問</h2>
       <p class="section__intro">よくある質問と回答はこちらです。</p>
       <div class="faq__container">
         <div class="faq__item">
@@ -155,7 +155,7 @@
     <!-- Contact Section -->
     <section class="section" id="contact">
       <h2>お問い合わせ</h2>
-      <p class="section__intro">お気軽にお問い合わせください。３営業日までにご返信させていただきます。</p>
+      <p class="section__intro">無料体験やお問い合わせはこちらから承っております。お気軽にご連絡ください。</p>
       <form name="contact" netlify  method="POST" class="contact__form">
         <input type="text" name="name" placeholder="お名前" required>
         <input type="email" name="email" placeholder="メールアドレス" required>
@@ -220,6 +220,7 @@
   </footer>
 
   <!-- JS　-->
+  <script src="scroll-anchor.js"></script>
   <script src="js/toggle-menu.js"></script>
   <script src="js/faq-accordion.js"></script>
   <script src="js/top-button.js"></script>
